@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="descr">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" 				rel="stylesheet"/>
+	<link rel="stylesheet"
+				href="css/choices.min.css">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Crossball</title>
+</head>
+
+
+<body>
+	<header class="header">
+  <div class="container header__container">
+    <a href="#" class="header__logo logo">
+      <svg class="logo__icon">
+        <use xlink:href="img/sprite.svg#sprite--logo-icon" />
+      </svg>
+      <svg class="logo__text">
+        <use xlink:href="img/sprite.svg#sprite--logo-text" />
+      </svg>
+    </a>
+    <nav class="header__nav menu">
+      <button class="menu__burger burger">
+        <div></div>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link link">
+            Расписание
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link link">
+            Игровые отчёты
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link link">
+            Статистика
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link menu__link--more link">
+            Ещё
+            <span class="menu__arrow">
+              <svg class="arrow-icon">
+                <use xlink:href="img/sprite.svg#sprite--arrow-down" />
+              </svg>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__right">
+      <button class="header__selector selector" data-da=".table-header,576,2">
+        <span class="selector__item">
+          <svg class="selector__icon">
+            <use xlink:href="img/sprite.svg#sprite--football" />
+          </svg>
+        </span>
+        <span class="selector__arrow">
+          <svg class="arrow-icon">
+            <use xlink:href="img/sprite.svg#sprite--arrow-down" />
+          </svg>
+        </span>
+      </button>
+      <a href="#" class="header__avatar avatar">
+        <picture>
+          <source srcset="img/avatars/ava-1.webp">
+          <img src="img/avatars/ava-1.png" alt="Аватар">
+        </picture>
+      </a>
+      <a href="#" class="header__badge" data-counter="1">
+        <svg class="bag">
+          <use xlink:href="img/sprite.svg#sprite--bag-full" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+	<main class="main">
+		<h1 class="visually-hidden">Crossball - Акаунт пользователя</h1>
+		<div class="container">
+			<div class="main__wrapper">
+				<div class="sidebar">
+  <div class="sidebar__header">
+    <div class="sidebar__header-top">
+      <a href="#" class="sidebar__avatar avatar">
+        <picture>
+          <source srcset="img/avatars/ava-1.webp">
+          <img src="img/avatars/ava-1.png" alt="Аватар">
+        </picture>
+        <div class="chart" id="graph" data-percent="87"></div>
+      </a>
+      <div class="sidebar__right">
+        <div class="sidebar__rate">
+          <span class="sidebar__rate-val text">
+            89.40
+          </span>
+          <span class="sidebar__rate-numbers">
+            <span class="text">999</span>
+            <svg class="arrow-small">
+              <use xlink:href="img/sprite.svg#sprite--arrow-small" />
+            </svg>
+          </span>
+        </div>
+        <div class="sidebar__name text">
+          <span class="text">Елишакашвили</span>
+          <span class="text">Михо</span>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar__header-bot">
+      <a href="#" class="sidebar__change link">
+        <svg class="pen">
+          <use xlink:href="img/sprite.svg#sprite--pen" />
+        </svg>
+        <span class="sidebar__change-text text">
+          Редактировать
+        </span>
+      </a>
+    </div>
+  </div>
+  <div class="sidebar__menu">
+    <ul class="sidebar__list">
+      <li class="sidebar__item">
+        <a href="#" class="sidebar__link sidebar__link--active withsub link">
+          <span class="sidebar__link-icon">
+            <svg class="sidebar-icon-outline">
+              <use xlink:href="img/sprite.svg#sprite--chart" />
+            </svg>
+          </span>
+          <span class="sidebar__link-text text">Статистика</span>
+          <span class="sidebar__link-icon sidebar__link-icon--arrow">
+            <svg class="sidebar-icon arrow-icon">
+              <use xlink:href="img/sprite.svg#sprite--arrow-down" />
+            </svg>
+          </span>
+        </a>
+        <ul class="sidebar__submenu sidebar__submenu--active">
+          <li class="sidebar__subitem">
+            <a href="#" class="sidebar__sublink sidebar__link sidebar__link--active link">
+              <span class="sidebar__link-text text">Футбол</span>
+            </a>
+          </li>
+          <li class="sidebar__subitem">
+            <a href="#" class="sidebar__sublink sidebar__link link">
+              <span class="sidebar__link-text text">Баскетбол</span>
+            </a>
+          </li>
+          <li class="sidebar__subitem">
+            <a href="#" class="sidebar__sublink sidebar__link link">
+              <span class="sidebar__link-text text">Волейбол</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="sidebar__item">
+        <a href="#" class="sidebar__link withsub link">
+          <span class="sidebar__link-icon">
+            <svg class="sidebar-icon">
+              <use xlink:href="img/sprite.svg#sprite--calendar" />
+            </svg>
+          </span>
+          <span class="sidebar__link-text text">Ближайшие игры</span>
+          <!-- <span class="sidebar__link-icon sidebar__link-icon--arrow">
+            <svg class="sidebar-icon arrow-icon">
+              <use xlink:href="img/sprite.svg#sprite--arrow-down" />
+            </svg>
+          </span> -->
+        </a>
+      </li>
+      <li class="sidebar__item">
+        <a href="#" class="sidebar__link link">
+          <span class="sidebar__link-icon">
+            <svg class="sidebar-icon">
+              <use xlink:href="img/sprite.svg#sprite--report" />
+            </svg>
+          </span>
+          <span class="sidebar__link-text text">Игровые отчёты</span>
+          <!-- <span class="sidebar__link-icon sidebar__link-icon--arrow">
+            <svg class="sidebar-icon arrow-icon">
+              <use xlink:href="img/sprite.svg#sprite--arrow-down" />
+            </svg>
+          </span> -->
+        </a>
+      </li>
+      <li class="sidebar__item">
+        <a href="#" class="sidebar__link link">
+          <span class="sidebar__link-icon">
+            <svg class="sidebar-icon">
+              <use xlink:href="img/sprite.svg#sprite--history" />
+            </svg>
+          </span>
+          <span class="sidebar__link-text text">История заказов</span>
+          <!-- <span class="sidebar__link-icon sidebar__link-icon--arrow">
+            <svg class="sidebar-icon arrow-icon">
+              <use xlink:href="img/sprite.svg#sprite--arrow-down" />
+            </svg>
+          </span> -->
+        </a>
+      </li>
+      <li class="sidebar__item" data-da=".sidebar__header-bot,768,last">
+        <a href="#" class="sidebar__link link">
+          <span class="sidebar__link-icon">
+            <svg class="sidebar-icon">
+              <use xlink:href="img/sprite.svg#sprite--exit" />
+            </svg>
+          </span>
+          <span class="sidebar__link-text text">Выйти</span>
+          <!-- <span class="sidebar__link-icon sidebar__link-icon--arrow">
+            <svg class="sidebar-icon arrow-icon">
+              <use xlink:href="img/sprite.svg#sprite--arrow-down" />
+            </svg>
+          </span> -->
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+				<div class="content__wrapper">
+					<section class="section main__header">
+  <div class="mh-badges" >
+    <ul class="mh-badges__list mh-badges__top">
+      <li class="mh-badges__item">
+        <a href="#" class="mh-badges__achive mh-badges__achive--counter" data-count="5">
+          <picture>
+            <source srcset="./img/badges/badge-visible.webp">
+            <img src="./img/badges/badge-visible.png" alt="Ачив">
+          </picture>
+        </a>
+      </li>
+      <li class="mh-badges__item">
+        <a href="#" class="mh-badges__achive mh-badges__achive--counter" data-count="5">
+          <picture>
+            <source srcset="./img/badges/badge-visible.webp">
+            <img src="./img/badges/badge-visible.png" alt="Ачив">
+          </picture>
+        </a>
+      </li>
+      <li class="mh-badges__item">
+        <a href="#" class="mh-badges__achive mh-badges__achive--counter" data-count="99">
+          <picture>
+            <source srcset="./img/badges/badge-visible.webp">
+            <img src="./img/badges/badge-visible.png" alt="Ачив">
+          </picture>
+        </a>
+      </li>
+      <li class="mh-badges__item mh-badges__item--clear">
+        <a href="#" class="mh-badges__achive mh-badges__achive--disabled">
+          <picture>
+            <source srcset="./img/badges/badge-visible.webp">
+            <img src="./img/badges/badge-visible.png" alt="Ачив">
+          </picture>
+        </a>
+      </li>
+      <li class="mh-badges__item">
+        <a href="#" class="mh-badges__achive mh-badges__achive--disabled">
+          <picture>
+            <source srcset="./img/badges/badge-hidden.webp">
+            <img src="./img/badges/badge-hidden.png" alt="Ачив">
+          </picture>
+        </a>
+      </li>
+      <li class="mh-badges__item">
+        <a href="#" class="mh-badges__achive mh-badges__achive--disabled">
+          <picture>
+            <source srcset="./img/badges/badge-hidden.webp">
+            <img src="./img/badges/badge-hidden.png" alt="Ачив">
+          </picture>
+        </a>
+      </li>
+    </ul>
+    <ul class="mh-badges__list mh-badges__bot">
+      <li class="mh-badges__item">
+        <a href="#" class="mh-badges__achive" data-count="5">
+          <picture>
+            <source srcset="./img/badges/badge-visible.webp">
+            <img src="./img/badges/badge-visible.png" alt="Ачив">
+          </picture>
+        </a>
+      </li>
+      <li class="mh-badges__item">
+        <a href="#" class="mh-badges__achive" data-count="5">
+          <picture>
+            <source srcset="./img/badges/badge-visible.webp">
+            <img src="./img/badges/badge-visible.png" alt="Ачив">
+          </picture>
+        </a>
+      </li>
+      <li class="mh-badges__item">
+        <a href="#" class="mh-badges__achive" data-count="99">
+          <picture>
+            <source srcset="./img/badges/badge-visible.webp">
+            <img src="./img/badges/badge-visible.png" alt="Ачив">
+          </picture>
+        </a>
+      </li>
+      <li class="mh-badges__item">
+        <a href="#" class="mh-badges__achive">
+          <picture>
+            <source srcset="./img/badges/badge-visible.webp">
+            <img src="./img/badges/badge-visible.png" alt="Ачив">
+          </picture>
+        </a>
+      </li>
+      <li class="mh-badges__item mh-badges__item--clear">
+        <a href="#" class="mh-badges__achive mh-badges__achive--disabled">
+          <picture>
+            <source srcset="./img/badges/badge-hidden.webp">
+            <img src="./img/badges/badge-hidden.png" alt="Ачив">
+          </picture>
+        </a>
+      </li>
+      <li class="mh-badges__item mh-badges__item--clear">
+        <a href="#" class="mh-badges__achive mh-badges__achive--disabled">
+          <picture>
+            <source srcset="./img/badges/badge-hidden.webp">
+            <img src="./img/badges/badge-hidden.png" alt="Ачив">
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="mh-games">
+    <div class="mh-games__switcher">
+      <button class="btn mh-games__btn mh-games__btn--active">
+        <span class="mh-games__btn-text text">Все сезоны</span>
+      </button>
+      <button class="btn mh-games__btn">
+        <span class="mh-games__btn-text text">Сезон 2020/21</span>
+      </button>
+    </div>
+    <ul class="mh-games__cards">
+      <li class="mh-games__card">
+        <span class="mh-games__title">Игры</span>
+        <span class="mh-games__total">36</span>
+      </li>
+      <li class="mh-games__card">
+        <span class="mh-games__title">Гол</span>
+        <span class="mh-games__total">67</span>
+      </li>
+      <li class="mh-games__card">
+        <span class="mh-games__title">Пас</span>
+        <span class="mh-games__total">136</span>
+      </li>
+      <li class="mh-games__card">
+        <span class="mh-games__title">Гол + пас</span>
+        <span class="mh-games__total">136</span>
+      </li>
+    </ul>
+  </div>
+  <div class="mh-social" data-da=".sidebar__header-bot,1391,last">
+    <p class="mh-social__title">
+      Поделиться
+    </p>
+    <ul class="mh-social__list">
+      <li class="mh-social__item">
+        <a href="#" class="mh-social__link link social-link">
+          <svg class="social">
+            <use xlink:href="img/sprite.svg#sprite--social-fb" />
+          </svg>
+        </a>
+      </li>
+      <li class="mh-social__item">
+        <a href="#" class="mh-social__link link social-link">
+          <svg class="social">
+            <use xlink:href="img/sprite.svg#sprite--social-vk" />
+          </svg>
+        </a>
+      </li>
+      <li class="mh-social__item">
+        <a href="#" class="mh-social__link link social-link">
+          <svg class="social">
+            <use xlink:href="img/sprite.svg#sprite--social-link" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+					<section class="section main__table">
+  <div class="table-header">
+    <select name="table-options" id="table-options" class="table-header__select">
+      <option value=""></option>
+      <option value="table" class="table-header__option">
+        Таблица
+      </option>
+      <option value="string" class="table-header__option">
+        Строка
+      </option>
+    </select>
+  </div>
+  <div class="table-wrapper">
+    <table class="table">
+      <thead class="table__head">
+        <tr class="table__top">
+          <th title="Сезон">Сезон</th>
+          <th title="Количество игр">Кол-во игр</th>
+          <th title="Количество голов">Гол</th>
+          <th title="Количество пасов">Пас</th>
+          <th title="Гол + пас">Гол + пас</th>
+          <th title="Рейтинг">Рейтинг</th>
+        </tr>
+      </thead>
+      <tbody class="table__body">
+        <tr class="table__row">
+          <td>Сезон 2021/2020</td>
+          <td>2</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+          <td class="table__rating">89.40</td>
+        </tr>
+        <tr class="table__row">
+          <td>Сезон 2020/2019</td>
+          <td>4</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td class="table__rating">89.40</td>
+        </tr>
+        <tr class="table__row">
+          <td>Сезон 2019/2018</td>
+          <td>4</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td class="table__rating">89.40</td>
+        </tr>
+        <tr class="table__row">
+          <td>Сезон 2018/2017</td>
+          <td>5</td>
+          <td>5</td>
+          <td>2</td>
+          <td>1</td>
+          <td class="table__rating">89.40</td>
+        </tr>
+        <tr class="table__row">
+          <td>Сезон 2017/2016</td>
+          <td>5</td>
+          <td>5</td>
+          <td>2</td>
+          <td>1</td>
+          <td class="table__rating">89.40</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+				</div>
+			</div>
+		</div>
+
+	</main>
+	<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__top-left">
+        <a href="#" class="footer__logo logo">
+          <svg class="logo__icon">
+            <use xlink:href="img/sprite.svg#sprite--logo-icon" />
+          </svg>
+          <svg class="logo__text">
+            <use xlink:href="img/sprite.svg#sprite--logo-text" />
+          </svg>
+        </a>
+    
+        <div class="dwl">
+          <a href="#" class="dwl__link dwl__appstore">
+            <svg class="dwl-icon dwl-apple">
+              <use xlink:href="img/sprite.svg#sprite--apple" />
+            </svg>
+            <svg class="dwl-icon dwl-text">
+              <use xlink:href="img/sprite.svg#sprite--apple-text" />
+            </svg>
+          </a>
+          <a href="#" class="dwl__link dwl__playmarket">
+            <svg class="dwl-icon dwl-play">
+              <use xlink:href="img/sprite.svg#sprite--playmarket" />
+            </svg>
+            <svg class="dwl-icon dwl-text">
+              <use xlink:href="img/sprite.svg#sprite--playmarket-text" />
+            </svg>
+          </a>
+        </div>
+        
+        <ul class="footer__list">
+          <li class="footer__item footer__item--head">
+            Наши контакты
+          </li>
+          <li class="footer__item">
+            <a href="tel:+74951090309" class="footer__link">
+              <span>
+                <svg class="footer__link-icon">
+                  <use xlink:href="img/sprite.svg#sprite--phone" />
+                </svg>
+              </span>
+              <span class="footer__link-text">
+                +7 (495) 109-03-09
+              </span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="mailto:go@crossball.ru" class="footer__link">
+              <span>
+                <svg class="footer__link-icon">
+                  <use xlink:href="img/sprite.svg#sprite--mail" />
+                </svg>
+              </span>
+              <span class="footer__link-text">
+                go@crossball.ru
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__top-right">
+        <ul class="footer__block-list" data-da=".menu__list,902,last">
+          <li class="footer__block-item">
+            <ul class="footer__list">
+              <li class="footer__item footer__item--head">
+                Разделы
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Главная
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Расписание
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Игровые отчёты
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Статистика
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__block-item">
+            <ul class="footer__list">
+              <li class="footer__item footer__item--head">
+                Виды спорта
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Футбол
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Баскетбол
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Волейбол
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__block-item">
+            <ul class="footer__list">
+              <li class="footer__item footer__item--head">
+                Полезное
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Как записаться?
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Ответы на вопросы
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Достижения
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__block-item">
+            <ul class="footer__list">
+              <li class="footer__item footer__item--head">
+                Чё почём
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Абонементы
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Корп. клиентам
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Партнёры
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <p class="footer__copy text">
+        © Все права защищены
+      </p>
+      <ul class="footer__social-block social-block" data-da=".footer__top-left,576,2">
+        <li class="social-block__item">
+          <a href="#" class="social-block__link social-link">
+            <svg class="social">
+              <use xlink:href="img/sprite.svg#sprite--social-inst" />
+            </svg>
+          </a>
+        </li>
+        <li class="social-block__item">
+          <a href="#" class="social-block__link social-link">
+            <svg class="social">
+              <use xlink:href="img/sprite.svg#sprite--social-vk" />
+            </svg>
+          </a>
+        </li>
+        <li class="social-block__item">
+          <a href="#" class="social-block__link social-link">
+            <svg class="social">
+              <use xlink:href="img/sprite.svg#sprite--social-fb" />
+            </svg>
+          </a>
+        </li>
+        <li class="social-block__item">
+          <a href="#" class="social-block__link social-link">
+            <svg class="social">
+              <use xlink:href="img/sprite.svg#sprite--social-youtube" />
+            </svg>
+          </a>
+        </li>
+        <li class="social-block__item">
+          <a href="#" class="social-block__link social-link">
+            <svg class="social">
+              <use xlink:href="img/sprite.svg#sprite--social-telegram" />
+            </svg>
+          </a>
+        </li>
+        <li class="social-block__item">
+          <a href="#" class="social-block__link social-link">
+            <svg class="social">
+              <use xlink:href="img/sprite.svg#sprite--social-whatsup" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="link footer__made">
+        Cделали в Spans
+      </a>
+    </div>
+  </div>
+</footer>
+
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="js/tablesort.min.js"></script>
+<script src="js/dynamicAdapt.js"></script>
+<!-- <script src="js/libs.min.js"></script> -->
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
